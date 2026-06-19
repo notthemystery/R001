@@ -55,6 +55,9 @@ int main() {
     printf("##:::. ##::. #####::::. #####::::'######:\n");
     printf("..:::::..::::.....::::::.....:::::......::\n");
     printf("\n");
+    printf("Advanced Security and Recovery Tool");
+    printf("By The Mystery (notthemystery)");
+    printf("\n");
     
     int choice = showexploits();
     
