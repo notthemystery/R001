@@ -30,9 +30,10 @@ This tool only uses exploits that are patched by vendor. No Zero-Days.
 1. RedSun Exploit          - Windows
 2. GreenPlasma Exploit     - Windows
 3. MiniPlasma Exploit      - Windows
-4. CopyFail Exploit        - Linux
-5. DirtyFrag Exploit       - Linux
-6. DirtyFrag 2 Exploit     - Linux
+4. CallbackHell Exploit    - Windows
+5. CopyFail Exploit        - Linux
+6. DirtyFrag Exploit       - Linux
+7. DirtyFrag 2 Exploit     - Linux
 
 ## Platform Support
 
