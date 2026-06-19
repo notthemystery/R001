@@ -97,7 +97,7 @@ cl /Zi /Od src\*.c /Fe:r001.exe
 
 ```text
 R001/
-├── main.d
+├── main.c
 ├── Exploits/
 ```
 
