@@ -13,6 +13,17 @@ This project is intended for:
 
 Only use R001 on systems that you own or are explicitly authorized to test.
 
+## Exploits
+
+This tool only uses exploits that are patched by vendor. No Zero-Days.
+
+1. RedSun Exploit          - Windows
+2. GreenPlasma Exploit     - Windows
+3. MiniPlasma Exploit      - Windows
+4. CopyFail Exploit        - Linux
+5. DirtyFrag Exploit       - Linux
+6. DirtyFrag 2 Exploit     - Linux
+
 ## Platform Support
 
 | Platform | Status |
