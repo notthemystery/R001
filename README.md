@@ -10,14 +10,13 @@
 ```
 # R001
 
-R001 is a cross-platform system recovery and security research utility written in C.
+R001 is a cross-platform security research utility written in C.
 
 ## Notice
 
 This project is intended for:
 
 - Security research
-- System recovery
 - Vulnerability analysis
 - Educational purposes
 
